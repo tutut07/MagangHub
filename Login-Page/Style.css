@@ -1,0 +1,352 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#ececec;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+/* ======================= */
+/* DESKTOP */
+/* ======================= */
+
+.container{
+    width:100%;
+    max-width:1100px;
+    height:600px;
+    background:#fff;
+    display:flex;
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+/* LEFT */
+
+.left{
+    width:55%;
+}
+
+.left img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* RIGHT */
+
+.right{
+    width:45%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px;
+    background:#fff;
+}
+
+.login-box{
+    width:100%;
+    max-width:350px;
+}
+
+.logo{
+    width:75px;
+    display:block;
+    margin:0 auto 20px;
+}
+
+h2{
+    text-align:center;
+    font-size:34px;
+    font-weight:600;
+    margin-bottom:35px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#777;
+    margin-bottom:25px;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-size:14px;
+}
+
+input{
+    width:100%;
+    height:50px;
+    padding:0 15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+    transition:.3s;
+}
+
+input:focus{
+    border-color:#d9480f;
+}
+
+.forgot{
+    text-align:right;
+    margin-bottom:20px;
+}
+
+.forgot a{
+    color:#000;
+    text-decoration:none;
+    font-size:13px;
+}
+
+button{
+    width:100%;
+    height:48px;
+    background:#d9480f;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#bf360c;
+}
+
+.register{
+    text-align:center;
+    margin-top:25px;
+    font-size:14px;
+}
+
+.register a{
+    color:#1565c0;
+}
+
+#error{
+    margin-top:15px;
+    text-align:center;
+    color:red;
+}
+
+/* ======================= */
+/* TABLET */
+/* ======================= */
+
+@media(max-width:992px){
+
+.container{
+    height:auto;
+}
+
+.right{
+    padding:40px;
+}
+
+}
+
+/* ======================= */
+/* MOBILE */
+/* ======================= */
+
+@media(max-width:768px){
+
+body{
+
+    padding:0;
+
+    background:url("images/Mobile.png") center center/cover no-repeat;
+
+}
+
+/* Overlay hitam */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.35);
+
+    z-index:-1;
+
+}
+
+.container{
+
+    width:100%;
+
+    height:100vh;
+
+    max-width:none;
+
+    background:transparent;
+
+    border-radius:0;
+
+    box-shadow:none;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.left{
+
+    display:none;
+
+}
+
+.right{
+
+    width:100%;
+
+    background:transparent;
+
+    padding:25px;
+
+}
+
+.login-box{
+
+    width:100%;
+
+    max-width:330px;
+
+    margin:auto;
+
+}
+
+.logo{
+
+    width:80px;
+
+    margin-bottom:25px;
+
+}
+
+h2{
+
+    color:#fff;
+
+    font-size:24px;
+
+    line-height:34px;
+
+    margin-bottom:30px;
+
+}
+
+.subtitle{
+
+    display:none;
+
+}
+
+label{
+
+    display:none;
+
+}
+
+.form-group{
+
+    margin-bottom:18px;
+
+}
+
+input{
+
+    height:48px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#fff;
+
+    padding:0 15px;
+
+}
+
+input::placeholder{
+
+    color:#999;
+
+}
+
+.forgot{
+
+    text-align:right;
+
+    margin-top:-8px;
+
+    margin-bottom:20px;
+
+}
+
+.forgot a{
+
+    color:#fff;
+
+    font-size:12px;
+
+}
+
+button{
+
+    height:48px;
+
+    border-radius:8px;
+
+    background:#d9480f;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+.register{
+
+    margin-top:28px;
+
+    color:#fff;
+
+    font-size:13px;
+
+}
+
+.register a{
+
+    color:#4da6ff;
+
+}
+
+#error{
+
+    color:#fff;
+
+}
+
+}
